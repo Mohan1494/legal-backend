@@ -7,7 +7,8 @@ import casesRouter from "./routes/cases.js";
 dotenv.config();
 const app = express();
 
-app.use(cors());
+
+app.use(cors({ origin: "https://legal-frontend-woad.vercel.app/" })); // or specify your Vercel domain for more security
 app.use(express.json());
 
 // API route
