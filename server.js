@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 
 
-app.use(cors({ origin: "https://legal-frontend-woad.vercel.app/" })); // or specify your Vercel domain for more security
+app.use(cors({ origin: "*" })); // or specify your Vercel domain for more security
 app.use(express.json());
 
 // API route
